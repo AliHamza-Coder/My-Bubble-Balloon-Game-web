@@ -39,14 +39,29 @@ function score_increaseing(){
     scoreVal+=10
     score.textContent=scoreVal
 }
+function balloon_checker(){
+    let count=0;
+    Array.from(document.querySelector(".board").getElementsByClassName("balloon")).forEach((e) => {
+        if(Number(e.innerHTML)==hit)
+        {
+            count++;
+        }
+    })
+    if(count==1)
+        {
+            get_hit_baloon();
+        }
+}
 function main(){
     display_Balloons()
     get_hit_baloon()
+    balloon_checker()
     run_timer()
     board.addEventListener("click",(e)=>{
         background_music.play()
+        balloon_checker()
         if(Number(e.target.textContent)==hit)
-        {
+            {
             pop_song.play();
             e.target.style.display="none"
             get_hit_baloon();
