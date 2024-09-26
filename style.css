@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(162, 199, 114);
+}
+.panel {
+  width: 90%;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.nav-bar {
+  background-color: rgb(11, 116, 37);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fff;
+  width: 100%;
+  height: 80px;
+}
+.block {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.box {
+  padding: 8px 18px;
+  background-color: rgb(241, 239, 239);
+  border-radius: 5px;
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+}
+.board {
+  width: 100%;
+  height: calc(100%-80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.board h1{
+  font-size: 50px;
+  font-weight: 700;
+}
+.balloon {
+  display: inline-block;
+  width: 90px;
+  height: 112px;
+  background: hsl(307, 50%, 65%);
+  border-radius: 80%;
+  position: relative;
+  box-shadow: inset -10px -10px 0 rgba(0, 0, 0, 0.07);
+  margin: 20px 30px;
+  transition: transform 0.5s ease;
+  z-index: 10;
+  animation: balloons 4s ease-in-out infinite;
+  transform-origin: bottom center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  color: rgb(241, 239, 239);
+  cursor: pointer;
+}
+
+@keyframes balloons {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(4deg);
+  }
+}
+
+.balloon:before {
+  content: "▲";
+  font-size: 20px;
+  color: hsl(215, 30%, 50%);
+  display: block;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: -12px;
+  z-index: -100;
+}
+
+/* .balloon:after {
+ display:inline-block; top:153px;
+  position:absolute;
+  height:250px;
+  width:1px;
+  margin:0 auto;
+  content:"";
+  background:rgba(0,0,0,0.2); 
+} */
+#balloon0{
+  background-color: hsl(0, 82%, 45%);
+  animation-duration: 3.5s;
+}
+#balloon0:before{
+  color: hsl(0, 82%, 45%);
+}
+
+#balloon1{
+  background-color: hsl(135, 65%, 51%);
+  animation-duration: 3.5s;
+}
+#balloon1:before{
+  color: hsl(135, 65%, 51%);
+}
+
+#balloon2{
+  background-color: hsl(249, 81%, 44%);
+  animation-duration: 3.5s;
+}
+#balloon2:before{
+  color: hsl(249, 81%, 44%);
+}
+
+#balloon3{
+  background-color: hsl(59, 89%, 48%);
+  animation-duration: 3.5s;
+}
+#balloon3:before{
+  color: hsl(59, 89%, 48%);
+}
+
+#balloon4{
+  background-color: hsl(318, 79%, 50%);
+  animation-duration: 3.5s;
+}
+#balloon4:before{
+  color: hsl(318, 79%, 50%);
+}
+
+#balloon5{
+  background-color: hsl(197, 85%, 49%);
+  animation-duration: 3.5s;
+}
+#balloon5:before{
+  color: hsl(197, 85%, 49%);
+}
+
+#balloon6{
+  background-color: hsl(283, 69%, 57%);
+  animation-duration: 3.5s;
+}
+#balloon6:before{
+  color: hsl(283, 69%, 57%);
+}
+
+#balloon7{
+  background-color: hsl(32, 85%, 49%);
+  animation-duration: 3.5s;
+}
+#balloon7:before{
+  color: hsl(32, 85%, 49%);
+}
+
+#balloon8{
+  background: hsl(245, 40%, 65%);
+  animation-duration: 3.5s;
+}
+#balloon8:before{
+  color: hsl(245, 40%, 65%);
+}
+
+#balloon9{
+  background: hsl(59, 50%, 58%);
+  animation-duration: 3.5s;
+}
+#balloon9:before{
+  color: hsl(59, 30%, 52%);
+}
