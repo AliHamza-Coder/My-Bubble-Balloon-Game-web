@@ -51,11 +51,11 @@ function main(){
     display_Balloons()
     get_hit_baloon()
     hit_existance()
-    run_timer()
     board.addEventListener("click",(e)=>{
         background_music.play()
         if(Number(e.target.textContent)==hit)
             {
+            run_timer()
             pop_song.play();
             e.target.style.display="none"
             score_increaseing();
