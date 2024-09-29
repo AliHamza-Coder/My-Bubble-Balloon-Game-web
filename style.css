@@ -54,7 +54,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  /* margin-top: 10px; */
   padding: 15px;
 }
 .board h1{
@@ -70,9 +69,9 @@ body {
   position: relative;
   box-shadow: inset -10px -10px 0 rgba(0, 0, 0, 0.07);
   margin: 20px 30px;
-  /* transition: transform 0.5s ease; */
+  transition: transform 0.5s ease;
   z-index: 10;
-  /* animation: balloons 4s ease-in-out infinite; */
+  animation: balloons 4s ease-in-out infinite;
   transform-origin: bottom center;
   display: flex;
   align-items: center;
@@ -103,16 +102,6 @@ body {
   bottom: -12px;
   z-index: -100;
 }
-
-/* .balloon:after {
- display:inline-block; top:153px;
-  position:absolute;
-  height:250px;
-  width:1px;
-  margin:0 auto;
-  content:"";
-  background:rgba(0,0,0,0.2); 
-} */
 #balloon0{
   background-color: hsl(0, 82%, 45%);
   animation-duration: 3.5s;
